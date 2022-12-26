@@ -1,24 +1,24 @@
 body {
     box-sizing: content-box;
     font-family: 'Catamaran', sans-serif;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 header {
     color: white;
-    background-color: dimgray;
+    background-color: #534439;
     min-height: 100px;
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-h1 {
+header h1 {
     font-size: 40px;
     font-weight: 800;
     text-align: center;
     width: fit-content;
-    margin: auto;
 }
 
 h2 {
@@ -29,9 +29,9 @@ h2 {
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 500;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 7px;
 }
 
@@ -40,7 +40,7 @@ p {
     line-height: 120%;
 }
 
-a {
+a:link {
     color: #00b951;
     text-decoration: none;
 }
@@ -67,57 +67,33 @@ main {
     padding-inline: 25px;
 }
 
-.color-box {
-    height: 65px;
+.color-group {
     width: 100%;
     display: flex;
-    text-align: center;
-    font-family: monospace;
-    font-size: 17px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.color-box.three-color {
-    width: 60%;
-}
-
-.color-box.four-color {
-    width: 80%;
-}
-
-.color {
-    width: 10px;
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    margin: 0 7px;
-    border-radius: 15px;
+    gap: 14px;
+}
+
+.color-group li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    width: 180px;
+    font-family: monospace;
+    font-size: 16px;
     font-weight: bold;
-}
-
-.black-text {
-    color: black;
-}
-
-.color.black-text a {
-    text-decoration: none;
-    color: black;
+    text-align: center;
+    border-radius: 15px;
 }
 
 .grey-text {
     color: #dfe0df;
 }
 
-.color.grey-text a {
-    text-decoration: none;
-    color: #dfe0df;
-}
-
 #color-one {
     background-color: #f37d00;
-    margin-left: 0;
 }
 
 #color-two {
@@ -134,12 +110,10 @@ main {
 
 #color-five {
     background-color: #00811e;
-    margin-right: 0;
 }
 
 #color-six {
     background-color: #653d1e;
-    margin-left: 0;
 }
 
 #color-seven {
@@ -148,12 +122,10 @@ main {
 
 #color-eight {
     background-color: #402e32;
-    margin-right: 0;
 }
 
 #color-nine {
     background-color: #00b951;
-    margin-left: 0;
 }
 
 #color-ten {
@@ -166,5 +138,4 @@ main {
 
 #color-twelve {
     background-color: #094a75;
-    margin-right: 0;
 }
